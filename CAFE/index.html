@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mellow Café | Coffee, bakes and brunch in Lusaka</title>
+<meta name="description" content="Mellow Café serves fresh coffee, pastries and all-day brunch in Lusaka. See the menu and book a table on WhatsApp.">
+<meta property="og:title" content="Mellow Café | Lusaka">
+<meta property="og:description" content="Fresh coffee, pastries and brunch. Book a table on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+<header class="top">
+ <div class="wrap bar">
+  <a class="logo" href="#top">Mellow<span>Café</span></a>
+  <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="links">Menu</button>
+  <nav aria-label="Main"><ul id="links">
+   <li><a href="#menu">Menu</a></li>
+   <li><a href="#story">Our story</a></li>
+   <li><a href="#visit">Visit</a></li>
+   <li><a class="btn small" data-wa data-msg="Hi Mellow Café, I'd like to book a table.">Book a table</a></li>
+  </ul></nav>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="status" id="status" role="status"><span class="dot"></span><span id="status-text">Checking hours</span></div>
+   <h1>Slow mornings, <em>good coffee.</em></h1>
+   <p class="lead">Freshly roasted coffee, warm pastries and all-day brunch. Come for a quick flat white or stay for the afternoon.</p>
+   <div class="cta">
+    <a class="btn" data-wa data-msg="Hi Mellow Café, I'd like to book a table.">Book a table</a>
+    <a class="btn ghost" href="#menu">See the menu</a>
+   </div>
+  </div>
+  <div class="arch"><img src="assets/cafe-hero.webp" alt="Warm lamps over the counter at the café, with the espresso machine behind" width="1000" height="1499" fetchpriority="high" data-fallback></div>
+ </div>
+</section>
+
+<section id="menu">
+ <div class="wrap">
+  <h2>What we're serving</h2>
+  <p class="lead">Everything is made fresh each morning. Prices are in kwacha.</p>
+  <div class="tabs" role="tablist" aria-label="Menu categories">
+   <button role="tab" aria-selected="true" data-tab="coffee">Coffee &amp; drinks</button>
+   <button role="tab" aria-selected="false" data-tab="bakes">Bakes</button>
+   <button role="tab" aria-selected="false" data-tab="brunch">Brunch</button>
+  </div>
+  <div class="panel" id="coffee" role="tabpanel">
+   <ul class="items">
+    <li><div><h3>Flat white</h3><p>Double shot, steamed milk</p></div><b>K45</b></li>
+    <li><div><h3>Cappuccino</h3><p>Rich, foamy and balanced</p></div><b>K45</b></li>
+    <li><div><h3>Iced latte</h3><p>Over ice, with oat or full-cream milk</p></div><b>K55</b></li>
+    <li><div><h3>Masala chai</h3><p>Spiced black tea with milk</p></div><b>K40</b></li>
+    <li><div><h3>Fresh juice</h3><p>Orange, pineapple or mixed</p></div><b>K50</b></li>
+    <li><div><h3>Hot chocolate</h3><p>Dark chocolate, whipped cream</p></div><b>K55</b></li>
+   </ul>
+  </div>
+  <div class="panel" id="bakes" role="tabpanel">
+   <ul class="items">
+    <li><div><h3>Butter croissant</h3><p>Baked every morning</p></div><b>K35</b></li>
+    <li><div><h3>Cinnamon roll</h3><p>Warm with cream-cheese icing</p></div><b>K45</b></li>
+    <li><div><h3>Carrot cake slice</h3><p>Walnuts and spiced frosting</p></div><b>K55</b></li>
+    <li><div><h3>Blueberry muffin</h3><p>Soft, with a crisp top</p></div><b>K35</b></li>
+    <li><div><h3>Cheesecake</h3><p>Baked, with a berry compote</p></div><b>K60</b></li>
+    <li><div><h3>Banana bread</h3><p>Toasted with butter</p></div><b>K30</b></li>
+   </ul>
+  </div>
+  <div class="panel" id="brunch" role="tabpanel">
+   <ul class="items">
+    <li><div><h3>Full breakfast</h3><p>Eggs, sausage, bacon, beans, toast</p></div><b>K120</b></li>
+    <li><div><h3>Avocado toast</h3><p>Sourdough, poached egg, chilli flakes</p></div><b>K85</b></li>
+    <li><div><h3>Pancake stack</h3><p>Maple syrup and seasonal fruit</p></div><b>K75</b></li>
+    <li><div><h3>Chicken club sandwich</h3><p>Toasted, with fries</p></div><b>K110</b></li>
+    <li><div><h3>Garden omelette</h3><p>Three eggs, vegetables, cheese</p></div><b>K80</b></li>
+    <li><div><h3>Granola bowl</h3><p>Yoghurt, honey and fruit</p></div><b>K65</b></li>
+   </ul>
+  </div>
+  <p class="note">Sample menu and prices. Replace with the client's real items before launch.</p>
+ </div>
+</section>
+
+<section id="story" class="band">
+ <div class="wrap story">
+  <h2>Made slowly, served warmly</h2>
+  <div>
+   <p>Mellow started with a simple idea: a place where nobody rushes you. We roast in small batches, bake before sunrise and keep the kettle on for whoever walks in.</p>
+   <p>Bring a book, a laptop or a friend. There's free Wi-Fi, comfy seating and a quiet corner for meetings.</p>
+   <ul class="perks"><li>Free Wi-Fi</li><li>Outdoor seating</li><li>Takeaway orders</li><li>Birthday and group bookings</li></ul>
+  </div>
+ </div>
+</section>
+
+
+<section id="visit" class="band">
+ <div class="wrap visit">
+  <div>
+   <h2>Come and sit with us</h2>
+   <dl>
+    <dt>Address</dt><dd>Shop number, Mall name, Lusaka</dd>
+    <dt>Phone</dt><dd><a href="tel:+260764548733">+260 76 454 8733</a></dd>
+    <dt>WhatsApp</dt><dd><a data-wa href="#">Chat with us</a></dd>
+    <dt>Hours</dt><dd>Mon to Fri 07:00 to 19:00<br>Sat 08:00 to 20:00<br>Sun 09:00 to 16:00</dd>
+   </dl>
+   <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Lusaka+Zambia">Get directions</a>
+  </div>
+  <form id="book">
+   <h3>Book a table</h3>
+   <label>Name<input name="name" required autocomplete="name"></label>
+   <div class="row">
+    <label>Guests<select name="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option></select></label>
+    <label>Date<input type="date" name="date" required></label>
+    <label>Time<select name="time"><option>08:00</option><option>10:00</option><option>12:00</option><option>14:00</option><option>16:00</option><option>18:00</option></select></label>
+   </div>
+   <button class="btn" type="submit">Send on WhatsApp</button>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap foot"><span>&copy; <span id="yr">2026</span> Mellow Café, Lusaka</span><span>Website by your name here</span></div></footer>
+<a class="wa" data-wa href="#" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2 1.300 2.300 1.400.3.100.4.100.6-.1l.8-1c.2-.3.4-.2.6-.1l1.900.9c.3.1.5.2.5.3.1.2.1.8-.1 1.400z"/></svg></a>
+</body>
+</html>
